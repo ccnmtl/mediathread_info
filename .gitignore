@@ -6,3 +6,5 @@ deploy_specific
 .svn
 \#*
 bootstrap.py_old
+cache
+.doit.db
