@@ -2,3 +2,7 @@
 *~
 *.pyc
 ve
+deploy_specific
+.svn
+\#*
+bootstrap.py_old
