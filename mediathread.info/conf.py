@@ -12,7 +12,7 @@ BLOG_AUTHOR = "CCNMTL"
 BLOG_TITLE = "Mediathread"
 # This is the main URL for your site. It will be used
 # in a promient link
-SITE_URL = "http://mediathread.info"
+SITE_URL = "http://mediathread.info/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://nikola.ralsina.com.ar"
@@ -87,9 +87,9 @@ SIDEBAR_LINKS = {
 # rss feeds.
 #
 
-post_pages = (
-    ("toplevel/*.md", "", "frontpage.tmpl", False),
-    ("pages/*.md", "pages", "page.tmpl", False),
+PAGES = (
+    ("toplevel/*.md", "", "frontpage.tmpl"),
+    ("pages/*.md", "pages", "page.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -141,6 +141,7 @@ post_compilers = {
 
 # Final location is output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # INDEX_PATH = ""
+INDEX_PATH = 'toc'
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
